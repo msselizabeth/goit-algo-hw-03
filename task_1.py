@@ -20,7 +20,7 @@ def copy_file(file_path, dest_root):
         print(f"File not found: {file_path}")
 
 
-def process_directory(source: Path, dest_root: Path):
+def process_directory(source, dest_root):
     """Recursively processes a directory"""
     try:
         for item in source.iterdir():
